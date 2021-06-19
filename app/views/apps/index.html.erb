@@ -1,0 +1,17 @@
+<div id="projects">
+<% @apps.each do |app| %>
+  <div class="project">
+   <%= image_tag app.photo, :class => 'img' %>
+    <div class="project-body">
+      <a class="link" href="<%= app.description %>" target="_blank"><%= app.title %></a>
+    </div>
+
+    <div class="options">
+
+    <span><%= link_to 'Eliminar', app, method: :delete, data: { confirm: 'Estàs seguro?' } %></span>
+    </div>
+  </div>
+<% end %>
+</div>
+
+<td><%= link_to 'New App', new_app_path %></td>

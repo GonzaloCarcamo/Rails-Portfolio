@@ -1,0 +1,178 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ *{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body{
+    background-color: #dfd9d9;
+  }
+  
+  #navbar{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(7, 7, 7);
+  }
+  
+  #logo{
+    margin-left: 60px;
+    letter-spacing: -2px;
+    font-weight: 700;
+  }
+  
+  #logo strong{
+    color: rgb(52, 73, 255);
+  }
+  
+  #cv{
+    margin-right: 60px;
+    width: 50px;
+    height: 50px;
+    background-color:rgb(32, 32, 32);
+    color: white;
+    font-weight: 700;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+  }
+
+  #cv:hover{
+    background-color: rgb(52, 73, 255);
+    transition: all 300ms;
+  }
+
+  #hero{
+    height: 190px;
+    letter-spacing: -2px;
+    margin-left: 100px;
+    padding-top: 30px;
+  }
+
+  #hero h1{
+    color: rgb(32, 32, 32);
+    font-size: 50px;
+  }
+
+  #hero h4{
+    color: rgb(97, 97, 97);
+    margin-left: 3px;
+  }
+
+  button{
+    margin-top: 40px;
+    font-weight: 700;
+    margin-right: 5px;
+    width: 130px;
+    text-align: center;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-pro{
+    background-color: rgb(230, 230, 230);
+    color: rgb(27, 27, 27);
+    border: 1px solid rgb(192, 192, 192);
+  }
+
+  .btn-serv{
+    background-color: rgb(52, 73, 255);
+    color: rgb(243, 243, 243);
+  }
+
+
+  #about{
+    height: 300px;
+    background-color: white;
+    letter-spacing: -2px;
+  }
+
+  .resume{
+    width: 500px;
+    float: right;
+    text-align: justify;
+  }
+
+  .resume p{
+    letter-spacing: 3px;
+  }
+
+
+  
+  #projects{
+    width: 700px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+  }
+  
+  .project{
+    width: 31%;
+    height: 170px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgb(245, 241, 241);
+    border: 1px solid #ccc;
+  }
+  
+  .img{
+    width: 100%;
+    height: 110px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .project-body, .options{
+    margin: 0px auto;
+    width: 90%;
+  }
+  
+  .project-body p, .link{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .project-body p{
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(26, 26, 26);
+  }
+  
+  
+  .link{
+    font-size: 19px;
+    font-weight: bolder;
+    color: rgb(10, 10, 65);
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .options a{
+    font-size: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
