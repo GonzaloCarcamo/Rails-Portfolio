@@ -5,7 +5,7 @@
   
   <div>
     <% if signed_in? %>
-      Bienvenido <%= current_user.name %>
+      Bienvenido <%= current_user.name %> -
       <%= link_to "Salir", destroy_user_session_path, method: :delete %> -
       <td><%= link_to 'New App', new_app_path %></td>
     <% else %>
@@ -71,4 +71,10 @@
   </div>
 <% end %>
 </div>
+
+<footer id="footer">
+  Portafolio desarrollado en Rails 6
+  <%= javascript_pack_tag 'year'%>
+  
+</footer>
 
