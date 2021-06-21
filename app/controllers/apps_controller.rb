@@ -1,5 +1,6 @@
 class AppsController < ApplicationController
   before_action :set_app, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, except: [:index]
 
   # GET /apps or /apps.json
   def index
