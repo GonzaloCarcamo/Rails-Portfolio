@@ -6,9 +6,10 @@
   <div>
     <% if signed_in? %>
       Bienvenido <%= current_user.name %>
-      <%= link_to "Salir", destroy_user_session_path, method: :delete %>
+      <%= link_to "Salir", destroy_user_session_path, method: :delete %> -
+      <td><%= link_to 'New App', new_app_path %></td>
     <% else %>
-      <%= link_to "Ingresar", new_user_session_path %>
+      <%= link_to "Ingresar", new_user_session_path %> 
       <% end %>
   </div>
 </nav>
@@ -70,4 +71,4 @@
   </div>
 <% end %>
 </div>
-<td><%= link_to 'New App', new_app_path %></td>
+
