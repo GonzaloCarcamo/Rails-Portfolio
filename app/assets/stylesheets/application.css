@@ -101,6 +101,11 @@
     cursor: pointer;
   }
 
+  button a{
+    text-decoration: none;
+    color:white;
+  }
+
   .btn-pro{
     background-color: rgb(230, 230, 230);
     color: rgb(27, 27, 27);
@@ -228,3 +233,19 @@
     font-style: italic;
     padding-top: 20px;
   }
+
+
+.field{
+  width: 300px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions{
+  margin-top: 10px;
+}
+
+.field, .actions{
+  margin-left: 20px;
+}
